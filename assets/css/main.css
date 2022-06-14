@@ -3573,14 +3573,23 @@ input, select, textarea {
 			}
 			#creative-logo{
 				position: absolute;
-				left:17.5%;
-				top:53.3%;
-				z-index: 1000;
-				width:20em;
+				left: 38.1%;
+    			top: 57.7%;
+    			z-index: 1000;
+    			width: 15em;
 				height: auto;
 				-webkit-animation: hue 3s infinite;
 				animation-delay: 2s;
 				
+			}
+
+			#b-logo{
+				position: absolute;
+				width: 2.9em;
+    			left: 10%;
+    			top: 39%;
+				-webkit-animation: hue 3s infinite;
+				animation-delay: 2s;
 			}
 
 			@media screen and (max-height: 736px) {
@@ -3748,7 +3757,7 @@ input, select, textarea {
 			position: absolute;
 			text-align: center;
 			text-transform: uppercase;
-			width: 16em;
+			width: 17em;
 			z-index: 1;
 		}
 
