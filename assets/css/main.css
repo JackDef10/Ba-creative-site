@@ -2511,7 +2511,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #ef5e4a !important;
+				background-color: #314256 !important;
 			}
 
 			input[type="submit"].primary:active,
@@ -2520,6 +2520,10 @@ input, select, textarea {
 			button.primary:active,
 			.button.primary:active {
 				background-color: #eb341c !important;
+			}
+
+			#menu a:hover{
+				color:#F487B6;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -3537,7 +3541,7 @@ input, select, textarea {
 						}
 
 							#header nav > ul > li > a.menuToggle:after {
-								background-image: url(/images/menu-burger.svg);
+								background-image: url(../../images/menu-burger.svg);
 								background-position: right center;
 								background-repeat: no-repeat;
 								content: '';
