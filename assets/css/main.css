@@ -18,7 +18,10 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	scroll-behavior: smooth;
+	
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -202,6 +205,22 @@ input, select, textarea {
 	h4 {
 		font-size: 1em;
 		line-height: 1.5em;
+	}
+
+	@media screen and (max-width: 396px){
+
+		h4{
+			font-size: 0.85em;
+		}
+		
+	}
+	/*Galaxy Fold*/
+	@media screen and (max-width: 320px){
+
+		h4{
+			font-size: 0.65em;
+		}
+		
 	}
 
 	h5 {
@@ -2492,7 +2511,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #ef5e4a !important;
+				background-color: #314256 !important;
 			}
 
 			input[type="submit"].primary:active,
@@ -2501,6 +2520,10 @@ input, select, textarea {
 			button.primary:active,
 			.button.primary:active {
 				background-color: #eb341c !important;
+			}
+
+			#menu a:hover{
+				color:#F487B6;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -3474,7 +3497,8 @@ input, select, textarea {
 				@media screen and (max-width: 736px) {
 
 					#header h1 a {
-						font-size: 0.8em;
+						font-size: 0.9em;
+						padding-top:0.2em;
 					}
 
 				}
@@ -3517,7 +3541,7 @@ input, select, textarea {
 						}
 
 							#header nav > ul > li > a.menuToggle:after {
-								background-image: url(/images/menu-burger.svg);
+								background-image: url(../../images/menu-burger.svg);
 								background-position: right center;
 								background-repeat: no-repeat;
 								content: '';
@@ -3536,6 +3560,10 @@ input, select, textarea {
 
 									#header nav > ul > li > a.menuToggle span {
 										display: none;
+									}
+
+									#header nav > ul > li > a.menuToggle:after{
+										height:4.75em;
 									}
 
 							}
@@ -3591,7 +3619,8 @@ input, select, textarea {
 				-webkit-animation: hue 3s infinite;
 				animation-delay: 2s;
 			}
-
+			/*
+			
 			@media screen and (max-height: 736px) {
 
 				#ba-logo{
@@ -3602,6 +3631,7 @@ input, select, textarea {
 					height: auto;
 		
 					}
+
 					#creative-logo{
 						position: absolute;
 						left:20.5%;
@@ -3623,6 +3653,8 @@ input, select, textarea {
 					
 
 			}
+
+			*/
 
 			  @-webkit-keyframes hue {
 				0%, 100%  { -webkit-filter: hue-rotate(0deg); }
@@ -3744,7 +3776,7 @@ input, select, textarea {
 			-ms-transform: translateY(0);
 			transform: translateY(0);
 			border: none;
-			bottom: 0;
+			bottom: -2.5em;
 			color: inherit;
 			font-size: 0.8em;
 			height: 8.5em;
@@ -3797,6 +3829,8 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+	
+
 		@media screen and (max-width: 736px) {
 
 			#banner {
@@ -3832,8 +3866,14 @@ input, select, textarea {
 			#banner h2 {
 				font-size: 0.65em;
 			}
+		}
+			/*Galaxy fold screen */
+			@media screen and (max-width: 280px) {
 
-	}
+				#banner h2 {
+					font-size: 0.55em;
+				}
+			}
 
 	body.is-preload #banner h2 {
 		-moz-transform: scale(0.95);
@@ -4109,4 +4149,12 @@ input, select, textarea {
 
 	#contact-form{
 		padding: 0em 10em;
+	}
+
+	@media screen and (max-width: 980px){
+
+		#contact-form{
+			padding: 0em 1em;
+		}
+		
 	}
