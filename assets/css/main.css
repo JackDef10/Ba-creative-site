@@ -2737,11 +2737,11 @@ input, select, textarea {
 		}
 
 		.spotlight:nth-child(5) {
-			background-color: rgba(0, 0, 0, 0.375);
+			background-color: #D0A5C0;
 		}
 
 		.spotlight:nth-child(6) {
-			background-color: rgba(0, 0, 0, 0.45);
+			background-color: #8E7C93;
 		}
 
 		.spotlight:nth-child(7) {
