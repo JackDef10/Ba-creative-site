@@ -3594,67 +3594,14 @@ input, select, textarea {
 			#ba-logo{
 			display: block;
 			position: relative;
-			margin:3em auto;
+			margin:auto;
+			margin-top:-10em;
 			width: 20em;
 			height: auto;
+			-webkit-animation: hue 3s infinite;
+			animation-delay: 2s;
 
 			}
-			#creative-logo{
-				position: absolute;
-				left: 38.1%;
-    			top: 57.7%;
-    			z-index: 1000;
-    			width: 15em;
-				height: auto;
-				-webkit-animation: hue 3s infinite;
-				animation-delay: 2s;
-				
-			}
-
-			#b-logo{
-				position: absolute;
-				width: 2.9em;
-    			left: 10%;
-    			top: 39%;
-				-webkit-animation: hue 3s infinite;
-				animation-delay: 2s;
-			}
-			/*
-			
-			@media screen and (max-height: 736px) {
-
-				#ba-logo{
-					display: block;
-					position: relative;
-					margin:3em auto;
-					width: 10em;
-					height: auto;
-		
-					}
-
-					#creative-logo{
-						position: absolute;
-						left:20.5%;
-						top:52%;
-						z-index: 1000;
-						width:10em;
-						height: auto;
-						-webkit-animation: hue 3s infinite;
-						animation-delay: 2s;
-						
-					}
-					#banner h2:after{
-						bottom: 0em !important;
-					}
-
-					#banner p{
-						margin-top: 0em !important;
-					}
-					
-
-			}
-
-			*/
 
 			  @-webkit-keyframes hue {
 				0%, 100%  { -webkit-filter: hue-rotate(0deg); }
@@ -3668,14 +3615,6 @@ input, select, textarea {
 			  
 
 	#banner {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-direction: column;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
 		-moz-justify-content: center;
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
@@ -3688,14 +3627,41 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	.inner{
+		position: relative;
+		width: 100%;
+	}
+
+	.inner video{
+		height: 100vh;
+		width: 100%;
+		background-position: absolute;
+		z-index:10;
+		object-fit: cover;
+}
+
 	.inner img{
 		width:20em;
+	}
+
+	#logo-section{
+		background-color: rgba(0, 0, 0, 0.5);
+		width:100%;
+		z-index:20;
+		position:absolute;
 	}
 
 	@media screen and (max-width: 736px) {
 
 		.inner img{
 			width:15em;
+		}
+		.inner video{
+			height: 100vh;
+			width: 100%;
+			background-position: absolute;
+			z-index:10;
+			object-fit: cover;
 		}
 	}
 
@@ -3706,174 +3672,6 @@ input, select, textarea {
 		}
 	}
 
-		#banner h2 {
-			-moz-transform: scale(1);
-			-webkit-transform: scale(1);
-			-ms-transform: scale(1);
-			transform: scale(1);
-			-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
-			-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
-			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
-			transition: transform 0.5s ease, opacity 0.5s ease;
-			display: inline-block;
-			font-size: 1.75em;
-			opacity: 1;
-			padding: 0.35em 1em;
-			position: relative;
-			z-index: 1;
-		}
-
-			#banner h2:before, #banner h2:after {
-				-moz-transition: width 0.85s ease;
-				-webkit-transition: width 0.85s ease;
-				-ms-transition: width 0.85s ease;
-				transition: width 0.85s ease;
-				-moz-transition-delay: 0.25s;
-				-webkit-transition-delay: 0.25s;
-				-ms-transition-delay: 0.25s;
-				transition-delay: 0.25s;
-				background: #fff;
-				content: '';
-				display: block;
-				height: 2px;
-				position: absolute;
-				width: 100%;
-			}
-
-			#banner h2:before {
-				top: 1.5em;
-				left: 0;
-			}
-
-			#banner h2:after {
-				bottom: -1.8em;
-				right: 0;
-				
-			}
-
-		#banner p {
-			letter-spacing: 0.225em;
-			text-transform: uppercase;
-			margin-top:3em;
-
-		}
-
-			#banner p a {
-				color: inherit;
-			}
-
-		#banner .more {
-			-moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
-			-webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
-			-ms-transition: -ms-transform 0.75s ease, opacity 0.75s ease;
-			transition: transform 0.75s ease, opacity 0.75s ease;
-			-moz-transition-delay: 3.5s;
-			-webkit-transition-delay: 3.5s;
-			-ms-transition-delay: 3.5s;
-			transition-delay: 3.5s;
-			-moz-transform: translateY(0);
-			-webkit-transform: translateY(0);
-			-ms-transform: translateY(0);
-			transform: translateY(0);
-			border: none;
-			bottom: -2.5em;
-			color: inherit;
-			font-size: 0.8em;
-			height: 8.5em;
-			left: 50%;
-			letter-spacing: 0.225em;
-			margin-left: -8.5em;
-			opacity: 1;
-			outline: 0;
-			padding-left: 0.225em;
-			position: absolute;
-			text-align: center;
-			text-transform: uppercase;
-			width: 17em;
-			z-index: 1;
-		}
-
-			#banner .more:after {
-				background-image: url("images/arrow.svg");
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: contain;
-				bottom: 4em;
-				content: '';
-				display: block;
-				height: 1.5em;
-				left: 50%;
-				margin: 0 0 0 -0.75em;
-				position: absolute;
-				width: 1.5em;
-			}
-
-		#banner:after {
-			pointer-events: none;
-			-moz-transition: opacity 3s ease-in-out;
-			-webkit-transition: opacity 3s ease-in-out;
-			-ms-transition: opacity 3s ease-in-out;
-			transition: opacity 3s ease-in-out;
-			-moz-transition-delay: 1.25s;
-			-webkit-transition-delay: 1.25s;
-			-ms-transition-delay: 1.25s;
-			transition-delay: 1.25s;
-			content: '';
-			background: #354259;
-			display: block;
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			left: 0;
-			top: 0;
-			opacity: 0;
-		}
-
-	
-
-		@media screen and (max-width: 736px) {
-
-			#banner {
-				padding: 7em 3em 5em 3em ;
-				height: auto;
-				min-height: 0;
-			}
-
-				#banner h2 {
-					font-size: 1.25em;
-				}
-
-				#banner br {
-					display: none;
-				}
-
-				#banner .more {
-					display: none;
-				}
-
-		}
-
-		@media screen and (max-width: 500px) {
-
-				#banner h2 {
-					font-size: 0.85em;
-				}
-
-		}
-
-		@media screen and (max-width: 367px) {
-
-			#banner h2 {
-				font-size: 0.65em;
-			}
-		}
-			/*Galaxy fold screen */
-			@media screen and (max-width: 280px) {
-
-				#banner h2 {
-					font-size: 0.55em;
-				}
-			}
 
 	body.is-preload #banner h2 {
 		-moz-transform: scale(0.95);
@@ -4180,4 +3978,30 @@ input, select, textarea {
 		position: relative;
 		margin: auto;
 
+	}
+
+	.rightside, .leftside{
+	height:50vh;
+	width:100%;
+	}
+
+	@media screen and (min-width:768px){
+		.leftside, .rightside{
+			height:100vh;
+		}
+	}
+
+	.leftside{
+		background-color: rgba(0, 0, 0, 0.3);
+		
+	}
+
+	.rightside{
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+
+	@media screen and (max-width: 736px){
+		.leftside{
+			height: 60vh;
+		}
 	}
