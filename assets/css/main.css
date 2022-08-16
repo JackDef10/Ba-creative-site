@@ -3810,7 +3810,7 @@ input, select, textarea {
 									}
 
 									#header nav > ul > li > a.menuToggle:after{
-										height:4.75em;
+										height:3.75em;
 									}
 
 							}
@@ -3904,11 +3904,15 @@ input, select, textarea {
 			width:15em;
 		}
 		.inner video{
-			height: 100vh;
+			height: 50vh;
 			width: 100%;
 			background-position: absolute;
 			z-index:10;
 			object-fit: cover;
+		}
+		#logo-section{
+			padding-top:0em;
+			top:19.5em
 		}
 	}
 
@@ -3917,6 +3921,17 @@ input, select, textarea {
 		.inner img{
 			width:9em;
 		}
+		#ba-logo{
+			display: block;
+			position: relative;
+			margin:auto;
+			margin-top:-10em;
+			width: 20em;
+			height: auto;
+			-webkit-animation: hue 3s infinite;
+			animation-delay: 2s;
+
+			}
 	}
 
 
@@ -4228,7 +4243,7 @@ input, select, textarea {
 	}
 
 	.rightside, .leftside{
-	height:60vh;
+	height:50vh;
 	width:100%;
 	}
 
@@ -4245,15 +4260,9 @@ input, select, textarea {
 		
 	}
 
-	.rightside{
-		background-color: rgba(0, 0, 0, 0.6);
-
-	}
-
 	@media screen and (max-width: 736px){
 		.leftside{
-			height: 60vh;
-			padding-top:0em;
+			height: 50vh;
 		}
 
 		#logo-section{
