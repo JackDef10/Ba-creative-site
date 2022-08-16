@@ -2739,11 +2739,15 @@ input, select, textarea {
 			position: absolute;
 			top:0;
 			left:0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 
 		#hero .content img{
 			height: auto;
-			width: 60%;
+			width: 100%;
+			padding: 0em 1em;
 			
 		}
 
