@@ -2413,6 +2413,10 @@ input, select, textarea {
 
 /* Button */
 
+	a{
+		text-decoration: none !important;
+	}
+
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -2438,7 +2442,7 @@ input, select, textarea {
 		height: 3.125em;
 		letter-spacing: 0.225em;
 		line-height: 3.125em;
-		max-width: 30em;
+		max-width: 20em;
 		padding: 0 2.75em;
 		text-align: center;
 		text-decoration: none;
@@ -2446,6 +2450,7 @@ input, select, textarea {
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
+		margin-top:50px;
 	}
 
 		input[type="submit"]:hover,
@@ -3645,10 +3650,10 @@ input, select, textarea {
 	}
 
 	#logo-section{
-		background-color: rgba(0, 0, 0, 0.5);
 		width:100%;
 		z-index:20;
 		position:absolute;
+		padding-top:20em;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -3981,7 +3986,7 @@ input, select, textarea {
 	}
 
 	.rightside, .leftside{
-	height:50vh;
+	height:60vh;
 	width:100%;
 	}
 
@@ -3993,15 +3998,23 @@ input, select, textarea {
 
 	.leftside{
 		background-color: rgba(0, 0, 0, 0.3);
+		padding-top:20em;
+		padding-left:20px;
 		
 	}
 
 	.rightside{
 		background-color: rgba(0, 0, 0, 0.6);
+
 	}
 
 	@media screen and (max-width: 736px){
 		.leftside{
 			height: 60vh;
+			padding-top:0em;
+		}
+
+		#logo-section{
+			padding-top:0em;
 		}
 	}
