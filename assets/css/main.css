@@ -2731,7 +2731,7 @@ input, select, textarea {
 			z-index: 10;
 			object-fit: cover;
 		}
-
+		/*   -----------------------------logo placement--------------------->
 		#hero .content{
 			background-color: rgba(0,0,0,0.25);
 			height: 100%;
@@ -2751,7 +2751,7 @@ input, select, textarea {
 			padding: 0em 1em;
 			
 		}
-
+		*/
 
 		.films-content {
 			-moz-align-items: center;
