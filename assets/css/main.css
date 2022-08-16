@@ -2717,6 +2717,156 @@ input, select, textarea {
 			max-width: 48em;
 			width: 60%;
 		}
+		/*--------------------------------films section--------------------------*/
+		.films-content {
+			-moz-align-items: center;
+			-webkit-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+		}
+
+		.films-content .content {
+			padding: 2em 4em 0.1em 4em ;
+			-moz-order: 2;
+			-webkit-order: 2;
+			-ms-order: 2;
+			order: 2;
+			max-width: 48em;
+			width: 50%;
+		}
+
+		.films-content .image img {
+			border-radius: 0;
+			width: 100%;
+			padding:3em 0em;
+		}
+
+		.films-content .image {
+			-moz-order: 1;
+			-webkit-order: 1;
+			-ms-order: 1;
+			order: 1;
+			border-radius: 0;
+			width: 50%;
+		}
+		.films-content .films-section-heading{
+			color: #FF719B;
+			font-size: 54px;
+			line-height: 100%;
+			letter-spacing: 8%;
+			font-weight: 800;
+			text-align: center;
+			margin:0;
+		}
+
+			.alternate{
+			color: #ffffff;
+			font-size: 54px;
+			line-height: 100%;
+			letter-spacing: 8%;
+			font-weight: 800;
+			text-align: center;
+			margin:0;
+		}
+
+		.film-heading-section{
+			text-align: center;
+			margin-bottom: 3em;
+		}
+
+		.film-heading-section p{
+			font-size: 28px;
+			margin-top:20px;
+			position: relative;
+		}
+
+		.film-heading-section p:before{
+			content:"";
+			display: block;
+			background-color: #1d242a;
+			width: 180px;
+			height: 2px;
+			position: absolute;
+			left:0;
+			top:50%;
+			z-index: -2;
+		}
+
+		.film-heading-section p:after{
+			content:"";
+			display: block;
+			background-color: #1d242a;
+			width: 180px;
+			height: 2px;
+			position: absolute;
+			right:0;
+			top:50%;
+			z-index: -2;
+		}
+
+		span{
+			background:#FFF3F0;
+			padding:0em 1em;
+		}
+
+		.alternate-section p:before{
+			content:"";
+			display: block;
+			background-color: #fff;
+			width: 180px;
+			height: 2px;
+			position: absolute;
+			left:0;
+			top:50%;
+			z-index: -2;
+		}
+
+		.alternate-section p:after{
+			content:"";
+			display: block;
+			background-color: #fff;
+			width: 180px;
+			height: 2px;
+			position: absolute;
+			right:0;
+			top:50%;
+			z-index: -2;
+		}
+
+		.alternate-section span{
+			background:#6e3f5d;
+			padding:0em 1em;
+		}
+
+		.films-content:nth-child(1) {
+			background-color: #FFF3F0;
+			color: #444444;
+		}
+
+		.films-content:nth-child(2) {
+			background-color: #6e3f5d;
+		}
+
+		.films-content:nth-child(3) {
+			background-color: #FFF3F0;
+			color: #444444;
+		}
+
+		.films-content:nth-child(4) {
+			background-color: #6e3f5d;
+		}
+
+		.films-content:nth-child(2n) {
+			-moz-flex-direction: row-reverse;
+			-webkit-flex-direction: row-reverse;
+			-ms-flex-direction: row-reverse;
+			flex-direction: row-reverse;
+		}
+		/*--------------------------------End of films section--------------------------*/
 
 		.spotlight:nth-child(2n) {
 			-moz-flex-direction: row-reverse;
@@ -2775,6 +2925,14 @@ input, select, textarea {
 				width: 55%;
 			}
 
+			.films-content .image {
+				width: 45%;
+			}
+
+			.films-content .content {
+				width: 55%;
+			}
+
 		}
 
 		@media screen and (max-width: 980px) {
@@ -2798,6 +2956,34 @@ input, select, textarea {
 					width: 100%;
 				}
 
+				.films-content {
+					flex-direction: column;
+					
+				}
+
+				.films-content:nth-child(2n) {
+					-moz-flex-direction: column;
+					-webkit-flex-direction: column;
+					-ms-flex-direction: column;
+					flex-direction: column;
+				}
+	
+				.films-content br {
+						display: none;
+					}
+	
+					.films-content .image {
+						width: 50%;
+					}
+	
+					.films-content .content {
+						padding: 4em 3em 2em 3em ;
+						max-width: none;
+						text-align: center;
+						width: 100%;
+					}
+	
+
 		}
 
 		@media screen and (max-width: 736px) {
@@ -2805,6 +2991,27 @@ input, select, textarea {
 			.spotlight .content {
 				padding: 3em 2em 1em 2em ;
 			}
+
+			.films-content .content {
+				padding: 3em 2em 1em 2em ;
+			}
+
+			.films-content .films-section-heading{
+				font-size: 28px;
+
+			}
+	
+				.alternate{
+				font-size: 28px;
+			}
+			.films-content .image {
+				width: 60%;
+			}
+
+			.film-heading-section p{
+				font-size: 18px;
+			}
+
 
 		}
 
