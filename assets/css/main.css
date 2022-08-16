@@ -2718,6 +2718,36 @@ input, select, textarea {
 			width: 60%;
 		}
 		/*--------------------------------films section--------------------------*/
+		#hero{
+			position: relative;
+			padding:0 !important;
+			height: 60vh;
+		}
+
+		#hero video{
+			height: 60vh;
+			width: 100%;
+			background-position: absolute;
+			z-index: 10;
+			object-fit: cover;
+		}
+
+		#hero .content{
+			height: 100%;
+			width: 100%;
+			z-index: 20;
+			position: absolute;
+			top:0;
+			left:0;
+		}
+
+		#hero .content img{
+			height: auto;
+			width: 60%;
+			
+		}
+
+
 		.films-content {
 			-moz-align-items: center;
 			-webkit-align-items: center;
