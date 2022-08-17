@@ -2682,6 +2682,25 @@ input, select, textarea {
 			}
 
 /* Spotlight */
+			.client-logo img{
+				position: block;
+				margin-bottom:3em;
+			}
+
+			@media screen and (max-width: 736px){
+				.client-logo img{
+					width: 100px;
+				}
+			}
+
+		.case-study-text{
+		color:#1E3231;
+		border-radius: 2px;
+		padding: 0.2em;
+		font-size: 2em;
+		margin-bottom: 0em;
+		font-weight: 400;
+	}
 
 	.spotlight {
 		-moz-align-items: center;
@@ -2692,6 +2711,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		position: relative;
 	}
 
 		.spotlight .image {
