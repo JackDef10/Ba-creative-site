@@ -3073,11 +3073,11 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0 4em 0 ;
+		padding: 4em 0 4em 0 ;
 	}
 
 		.wrapper > .inner {
-			width: 60em;
+			width: 80em;
 			margin: 0 auto;
 		}
 
@@ -4314,3 +4314,114 @@ input, select, textarea {
 			padding-top:0em;
 		}
 	}
+
+
+	.image video{
+		height: auto;
+		width: 100%;
+		background-position: absolute;
+		z-index:10;
+		object-fit: cover;
+}
+
+.case-study-h1{
+	color:#2E3842;
+	font-size: 3em;
+	text-align: center;
+	margin:0;
+}
+
+.flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 100px 0px;
+}
+
+.flex.reverse{
+	flex-direction: row-reverse;
+}
+
+.flex div{
+	max-width:60%
+}
+
+.case-study-logo {
+	width: 100px;
+	margin-left:10px;
+}
+
+.case-study-logo img{
+	width: 100%;
+	
+}
+
+.case-study-title{
+	margin: auto;
+	margin-bottom: 30px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (max-width:736px){
+	.flex{
+		flex-direction: column;
+		margin:30px 0px;
+	}
+	.flex div{
+		width: 100%;
+		text-align: center;
+	}
+	.flex.reverse{
+		flex-direction: column;
+	}
+	.image.left{
+		max-width: 100%;
+		margin:0;
+		margin-bottom: 30px;
+	}
+	.image.right{
+		max-width: 100%;
+		margin:0;
+		margin-bottom: 30px;
+	}
+	.flex div{
+		max-width: 100%;
+	}
+	
+	span{
+		padding: 0em 0.2em;
+	}
+}
+
+header#asos-banner{
+	background-image: url(../../images/asos.png);
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	height: 60vh;
+}
+
+header#zalando-banner{
+	background-image: url(../../images/zalando-1-min.jpg);
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	height: 60vh;
+}
+
+header#chappy-banner{
+	background-image: url(../../images/chappy-min.jpg);
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	height: 60vh;
+}
